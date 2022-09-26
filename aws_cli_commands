@@ -1,0 +1,10 @@
+1. create secrets in secrets manager:
+aws secretsmanager create-secret --name MySecret --secret-string file://secrets.json
+
+2. create role and attach policy to it:
+aws iam create-role --role-name role-example --assume-role-policy-document file://trust-policy.json
+aws iam put-role-policy --role-name role-example --policy-name policy-example --policy-document file://iam_policy.json
+
+3. create s3 bucket for log data and lambda function code:
+aws s3api create-bucket --bucket my-bucket --region us-east-1 --object-ownership BucketOwnerEnforced
+aws s3api put-public-access-block --bucket my-bucket --public-access-block-configuration "BlockPublicAcls=true,IgnorePublicAcls=true,BlockPublicPolicy=true,RestrictPublicBuckets=true"
