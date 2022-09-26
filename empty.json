@@ -8,7 +8,7 @@
     "S3Bucket": "",
     "S3Prefix": "",
     "S3Region": "",
-    "FALCON_REGION": "",
+    "FalconRegion": "",
     "SqsURL": "",
     "SecretArn": ""
 }

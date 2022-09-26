@@ -69,7 +69,7 @@ func makeParameters() {
 		"S3Region",
 		"SqsURL",
 		"SecretArn",
-		"FALCON_REGION",
+		"FalconRegion",
 	}
 
 	var items []string
