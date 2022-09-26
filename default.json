@@ -1,0 +1,14 @@
+{
+    "StackName": "falcon-data-forwarder-default",
+    "Region": "us-east-1",
+    "CodeS3Bucket": "falcon-lambda-function",
+    "CodeS3Prefix": "falcon-data-forwarder-default",
+
+    "RoleArn": "arn:aws:iam::xxxxxxxxxx:role/CryptoFalconDataFowarder",
+    "S3Bucket": "default-falcon-data",
+    "S3Prefix": "logs/",
+    "S3Region": "us-east-1",
+    "FalconRegion": "us-west-2",
+    "SqsURL": "https://sqs.us-east-1.amazonaws.com/xxxxxxxx/xxxxx-queue-111111111111-222222222",
+    "SecretArn": "arn:aws:secretsmanager:us-east-1:xxxxxxx:secret:default_falcon_data_forward-111111"
+}

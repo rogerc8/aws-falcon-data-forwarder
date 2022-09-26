@@ -55,7 +55,7 @@ Prepare a configuration file. (e.g. `myconfig.json` ) Please see a following sam
     "SecretArn": "arn:aws:secretsmanager:ap-northeast-1:1234567890:secret:your-secret-name-4UqOs6"
 }
 ```
-use empty.json as template
+use default.json as template
 
 - Management
   - `StackName`: CloudFormation(CFn) stack name
