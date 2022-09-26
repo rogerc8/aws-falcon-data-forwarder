@@ -21,7 +21,7 @@ This lambda function receives SQS message(s) from Data Replicator of CrowdStrike
   - IAM role for Lambda function (e.g. `arn:aws:iam::1234567890:role/LambdaFalconDataForwarder`)
     - s3::PutObject for `my-log-bucket`
     - secretsmanager:GetSecretValue
-    use iam.json as template
+    - use iam.json as template
 
 Make sure that you need CrowdStrike Falcon and Data Replicator service.
 
@@ -73,7 +73,7 @@ use empty.json as template
 ### Deploy
 
 ```bash
-$ env FORWARDER_CONFIG=myconfig. make deploy
+$ env FORWARDER_CONFIG=myconfig.json make deploy
 ```
 
 ## License
